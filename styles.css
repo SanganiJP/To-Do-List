@@ -1,0 +1,111 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f8b500, #fceabb);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px 30px;
+    width: 350px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+#todo-input {
+    width: calc(100% - 30px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+#add-btn {
+    background-color: #ff7b54;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#add-btn:hover {
+    background-color: #ff5a2c;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    max-height: 200px;
+    overflow-y: auto;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+li:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+button.Delete {
+    background: #ff4c4c;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+button.Delete:hover {
+    background: #e63939;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
